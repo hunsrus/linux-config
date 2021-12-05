@@ -1,22 +1,22 @@
 # Soluciones
 ## Touchpad
-Si el touchpad no funciona después de suspender, pegar susp-touchpad.sh en /lib/systemd/system-sleep/
+Si el touchpad no funciona después de suspender, pegar **susp-touchpad.sh** en **/lib/systemd/system-sleep/**
 
 ## Codecs Privativos
-Instalar codecs privativos para reconocer más archivos multimedia -> "sudo apt-get install ubuntu-restricted-extras"
+Instalar codecs privativos para reconocer más archivos multimedia -> **sudo apt-get install ubuntu-restricted-extras**
 
 ## Arduino Original
-Si no podes comunicarte con arduinos originales usando el IDE, instalá estos paquetes -> "sudo apt-get install openjdk-8-jre avr-libc gcc-avr"
+Si no podes comunicarte con arduinos originales usando el IDE, instalá estos paquetes -> **sudo apt-get install openjdk-8-jre avr-libc gcc-avr**
 
 ## Formato Office
-Para que el formato en WPS sea más cercano a Office, crear carpeta "sudo mkdir /usr/share/fonts/wps-fonts" y agregar fuentes de microsoft ahí.
+Para que el formato en WPS sea más cercano a Office, crear carpeta **sudo mkdir /usr/share/fonts/wps-fonts** y agregar fuentes de microsoft ahí.
 (Para OnlyOffice agregar las fuentes normalmente)
 
 ## Super+#
 Para el acceso directo con Super+# a las aplicaciones favoritas, la extensión Dash to Dock agrega la funcionalidad de nuevo.
 
 ## Instalar ISE Design Suite
-Las instrucciones y todo lo necesario está en la carpeta *xilinx*
+Las instrucciones y todo lo necesario está en la carpeta **xilinx**
 (No incluye instalador pesa una banda)
 
 ## QtCreator rompe las bolas con los kits:
@@ -34,9 +34,9 @@ Si los proyectos de qt corren bien pero marca errores en las clases como q_dialo
 ## Tema de PopOS
 Para instalar el tema de Pop OS:
 
-sudo apt-add-repository ppa:system76/pop
-sudo apt update
-sudo apt install pop-theme
+**sudo apt-add-repository ppa:system76/pop**
+**sudo apt update**
+**sudo apt install pop-theme**
 
 Esto instala también las fuentes, que son:
 
