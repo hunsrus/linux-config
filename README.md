@@ -29,7 +29,7 @@ Para el acceso directo con `Super+#` a las aplicaciones favoritas, la extensión
 Las instrucciones y todo lo necesario está en la carpeta `xilinx`
 (No incluye instalador pesa una banda)
 
-## QtCreator rompe las bolas con los kits:
+## QtCreator rompe las bolas con los kits
 1. Execute in your terminal the command: `sudo apt-get install qt5-default` to install qt version 5.
 2. Verify the version of your Qt and the location of your qmake file. Do this by executing in your terminal the command `qmake --version`. You may have a result similar to this line. QMake version 3.1 Using Qt version 5.9.5 in `/usr/lib/x86_64-linux-gnu`. What's important here is the location `/usr/lib/x86_64-linux-gnu`.
 3. Open your Qt-creator.
@@ -52,8 +52,11 @@ sudo apt install pop-theme
 Esto instala también las fuentes, que son:
 
 Window Titles: `Fira Sans SemiBold 10`
+
 Interface: `Fira Sans Book 10`
+
 Documents: `Roboto Slab Regular 11`
+
 Monospace: `Fira Mono Regular 11`
 
 ## Extensiones
