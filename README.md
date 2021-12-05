@@ -1,4 +1,4 @@
-# Touchpad
+## Touchpad
 Si el touchpad no funciona después de suspender, pegar susp-touchpad.sh en /lib/systemd/system-sleep/
 
 #Codecs Privativos
