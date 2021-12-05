@@ -4,13 +4,13 @@ Si el touchpad no funciona después de suspender, pegar **susp-touchpad.sh** en 
 
 ## Codecs Privativos
 Instalar codecs privativos para reconocer más archivos multimedia
-'''
+```
 sudo apt-get install ubuntu-restricted-extras
-'''
+```
 
 ## Arduino Original
 Si no podes comunicarte con arduinos originales usando el IDE, instalá estos paquetes
-**sudo apt-get install openjdk-8-jre avr-libc gcc-avr**
+`sudo apt-get install openjdk-8-jre avr-libc gcc-avr`
 
 ## Formato Office
 Para que el formato en WPS sea más cercano a Office, crear carpeta
