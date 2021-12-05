@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=ISE Design Suite
+Comment=IDE para desarrollar en VHDL fachero
+Icon=/media/gabriel/DATOS/Instaladores/Programas/Xilinx/ise_ds.png
+Exec=/media/gabriel/DATOS/Programas/Xilinx/14.7/ISE_DS/ISE/bin/lin64/ise
+Terminal=false
+Categories=VHDL;Programming;Electronics
