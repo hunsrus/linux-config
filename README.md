@@ -63,8 +63,8 @@ Exlusivas pop:
 - Cosmic Dock
 - Pop COSMIC
 - System76 Power
-## Programas
-- [Google Chrome](https://www.google.com/intl/es/chrome/)
+## Programas que insala el script
+- Google Chrome
 - Spotify
 - VLC
 - Crossover
@@ -78,7 +78,6 @@ Exlusivas pop:
 - Winetricks
 - Transmission
 - OnlyOffice
-## Programas facultad
 - Zoom
 - Teams
 - OBS
