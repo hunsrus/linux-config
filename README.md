@@ -73,7 +73,6 @@ Exlusivas pop:
 - Stremio
 - VirtualBox
 - Arduino IDE
-- Telegram
 - GIMP
 - Wine
 - Winetricks
