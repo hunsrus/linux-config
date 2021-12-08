@@ -64,7 +64,7 @@ Exlusivas pop:
 - Pop COSMIC
 - System76 Power
 ## Programas
-- Google Chrome
+- [Google Chrome](https://www.google.com/intl/es/chrome/)
 - Spotify
 - VLC
 - Crossover
