@@ -1,7 +1,7 @@
 # Soluciones
 ## Touchpad <img align="left" src="http://pngimg.com/uploads/cursor/cursor_PNG68.png" width="16px">
 Si el touchpad no funciona después de suspender, pegar `susp-touchpad.sh` en `/lib/systemd/system-sleep/`
-## Codecs Privativos <img align="left" src="https://icons-for-free.com/iconfiles/png/512/file+format+mp4+icon-1320184494683029753.png" width="32px">
+## Codecs Privativos <img align="left" src="https://www.iconpacks.net/icons/1/free-video-icon-831-thumb.png" width="36px">
 Instalar codecs privativos para reconocer más archivos multimedia
 ```
 sudo apt-get install ubuntu-restricted-extras
@@ -23,7 +23,7 @@ Para el acceso directo con `Super+#` a las aplicaciones favoritas, la extensión
 ## Instalar ISE Design Suite <img align="left" src="https://github.com/hunsrus/linux-config/blob/main/xilinx/ise_ds.png" width="32px">
 Las instrucciones y todo lo necesario está en la carpeta `xilinx`
 (No incluye instalador pesa una banda)
-## QtCreator rompe las bolas con los kits <img align="left" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Qt_logo_2016.svg/1200px-Qt_logo_2016.svg.png" width="32px">
+## QtCreator rompe las bolas con los kits <img align="left" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Qt_logo_2016.svg/1200px-Qt_logo_2016.svg.png" width="36px">
 1. Execute in your terminal the command: `sudo apt-get install qt5-default` to install qt version 5.
 2. Verify the version of your Qt and the location of your qmake file. Do this by executing in your terminal the command `qmake --version`. You may have a result similar to this line. QMake version 3.1 Using Qt version 5.9.5 in `/usr/lib/x86_64-linux-gnu`. What's important here is the location `/usr/lib/x86_64-linux-gnu`.
 3. Open your Qt-creator.
@@ -34,7 +34,7 @@ Las instrucciones y todo lo necesario está en la carpeta `xilinx`
 8. Then apply all. Check your compiler and debugger and it's ok. You're done.
 
 Si los proyectos de qt corren bien pero marca errores en las clases como q_dialog, ir a "Help"->"About Plugins" y desactivar "ClangCodeModel". Reiniciar Qt.
-# Config <img align="left" src="https://triphase.com/img/support/46/config.png" width="64px">
+# Config <img align="left" src="https://triphase.com/img/support/46/config.png" width="60px">
 ## Tema de PopOS
 Para instalar el tema de Pop OS:
 ```
