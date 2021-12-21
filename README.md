@@ -1,29 +1,29 @@
 # Soluciones
-## Touchpad
+## Touchpad <img align="left" src="http://pngimg.com/uploads/cursor/cursor_PNG68.png" width="16px">
 Si el touchpad no funciona después de suspender, pegar `susp-touchpad.sh` en `/lib/systemd/system-sleep/`
-## Codecs Privativos
+## Codecs Privativos <img align="left" src="https://icons-for-free.com/iconfiles/png/512/file+format+mp4+icon-1320184494683029753.png" width="32px">
 Instalar codecs privativos para reconocer más archivos multimedia
 ```
 sudo apt-get install ubuntu-restricted-extras
 ```
-## Arduino Original
+## Arduino Original <img align="left" src="https://electronperdido.com/wp-content/uploads/2021/02/arduino-logo-1.png" width="32px">
 Si no podes comunicarte con arduinos originales usando el IDE, instalá estos paquetes
 ```
 sudo apt-get install openjdk-8-jre avr-libc gcc-avr
 ```
-## Formato Office
+## Formato Office <img align="left" src="https://download.onlyoffice.com/assets/fb/fb_icon_325x325.jpg" width="32px">
 Para que el formato en WPS sea más cercano a Office, crear carpeta
 ```
 sudo mkdir /usr/share/fonts/wps-fonts
 ```
 y agregar fuentes de microsoft ahí.
 (Para OnlyOffice agregar las fuentes normalmente)
-## Super+#
+## Super+# <img align="left" src="https://cdn2.hubspot.net/hub/53/file-23123745-jpg/blog/images/hashtag.jpg" width="32px">
 Para el acceso directo con `Super+#` a las aplicaciones favoritas, la extensión Dash to Dock agrega la funcionalidad de nuevo.
-## Instalar ISE Design Suite
+## Instalar ISE Design Suite <img align="left" src="https://github.com/hunsrus/linux-config/blob/main/xilinx/ise_ds.png" width="32px">
 Las instrucciones y todo lo necesario está en la carpeta `xilinx`
 (No incluye instalador pesa una banda)
-## QtCreator rompe las bolas con los kits
+## QtCreator rompe las bolas con los kits <img align="left" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Qt_logo_2016.svg/1200px-Qt_logo_2016.svg.png" width="32px">
 1. Execute in your terminal the command: `sudo apt-get install qt5-default` to install qt version 5.
 2. Verify the version of your Qt and the location of your qmake file. Do this by executing in your terminal the command `qmake --version`. You may have a result similar to this line. QMake version 3.1 Using Qt version 5.9.5 in `/usr/lib/x86_64-linux-gnu`. What's important here is the location `/usr/lib/x86_64-linux-gnu`.
 3. Open your Qt-creator.
@@ -34,7 +34,7 @@ Las instrucciones y todo lo necesario está en la carpeta `xilinx`
 8. Then apply all. Check your compiler and debugger and it's ok. You're done.
 
 Si los proyectos de qt corren bien pero marca errores en las clases como q_dialog, ir a "Help"->"About Plugins" y desactivar "ClangCodeModel". Reiniciar Qt.
-# Config
+# Config <img align="left" src="https://triphase.com/img/support/46/config.png" width="64px">
 ## Tema de PopOS
 Para instalar el tema de Pop OS:
 ```
