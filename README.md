@@ -57,6 +57,9 @@ Monospace: `Fira Mono Regular 11`
 - [Ubuntu Appindicators](https://extensions.gnome.org/extension/615/appindicator-support/)
 - [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/)
 - [User Themes](https://extensions.gnome.org/extension/19/user-themes/) (para que funcione el tema de pop en el shell de gnome)
+- Color Picker
+- Hide Top Bar
+- Notification Timeout
 - Removable drive menu
 - Pop Shell
 Exlusivas pop:
