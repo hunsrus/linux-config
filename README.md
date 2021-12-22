@@ -1,5 +1,5 @@
 # Soluciones
-## Touchpad <img align="left" src="http://pngimg.com/uploads/cursor/cursor_PNG68.png" width="16px">
+## Touchpad <img align="left" src="https://st.depositphotos.com/1010146/3709/v/600/depositphotos_37097981-stock-illustration-pointing-finger-click-icon.jpg" width="28px">
 Si el touchpad no funciona después de suspender, pegar `susp-touchpad.sh` en `/lib/systemd/system-sleep/`
 ## Codecs Privativos <img align="left" src="https://www.iconpacks.net/icons/1/free-video-icon-831-thumb.png" width="36px">
 Instalar codecs privativos para reconocer más archivos multimedia
@@ -18,7 +18,7 @@ sudo mkdir /usr/share/fonts/wps-fonts
 ```
 y agregar fuentes de microsoft ahí.
 (Para OnlyOffice agregar las fuentes normalmente)
-## Super+# <img align="left" src="https://cdn2.hubspot.net/hub/53/file-23123745-jpg/blog/images/hashtag.jpg" width="32px">
+## Super+# <img align="left" src="https://cdn2.hubspot.net/hub/53/file-23123745-jpg/blog/images/hashtag.jpg" width="34px">
 Para el acceso directo con `Super+#` a las aplicaciones favoritas, la extensión Dash to Dock agrega la funcionalidad de nuevo.
 ## Instalar ISE Design Suite <img align="left" src="https://github.com/hunsrus/linux-config/blob/main/xilinx/ise_ds.png" width="32px">
 Las instrucciones y todo lo necesario está en la carpeta `xilinx`
@@ -35,7 +35,7 @@ Las instrucciones y todo lo necesario está en la carpeta `xilinx`
 
 Si los proyectos de qt corren bien pero marca errores en las clases como q_dialog, ir a "Help"->"About Plugins" y desactivar "ClangCodeModel". Reiniciar Qt.
 # Config <img align="left" src="https://triphase.com/img/support/46/config.png" width="60px">
-## Tema de PopOS
+## Tema de PopOS <img align="left" src="https://betanews.com/wp-content/uploads/2017/06/pop_logo.png" width="32px">
 Para instalar el tema de Pop OS:
 ```
 sudo apt-add-repository ppa:system76/pop
@@ -51,7 +51,7 @@ Interface: `Fira Sans Book 10`
 Documents: `Roboto Slab Regular 11`
 
 Monospace: `Fira Mono Regular 11`
-## Extensiones
+## Extensiones <img align="left" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Antu_kt-plugins.svg/1024px-Antu_kt-plugins.svg.png" width="34px">
 - [Caffeine](https://extensions.gnome.org/extension/517/caffeine/)
 - [Unite](https://extensions.gnome.org/extension/1287/unite/)
 - [Ubuntu Appindicators](https://extensions.gnome.org/extension/615/appindicator-support/)
@@ -63,7 +63,7 @@ Exlusivas pop:
 - Cosmic Dock
 - Pop COSMIC
 - System76 Power
-## Programas que insala el script
+## Programas que insala el script <img align="left" src="https://zhihuicao.files.wordpress.com/2016/03/2000px-poundexclam-svg.png" width="34px">
 - Google Chrome
 - Spotify
 - VLC
