@@ -20,6 +20,17 @@ y agregar fuentes de microsoft ahí.
 (Para OnlyOffice agregar las fuentes normalmente)
 ## Super+# <img align="left" src="https://cdn2.hubspot.net/hub/53/file-23123745-jpg/blog/images/hashtag.jpg" width="34px">
 Para el acceso directo con `Super+#` a las aplicaciones favoritas, la extensión Dash to Dock agrega la funcionalidad de nuevo.
+
+Using the `dconf-editor` method;
+```
+dconf-editor /org/gnome/shell/keybindings
+```
+Select the entry you want from `switch-to-application-?`. The numbers correspond with the position in the dash from the top.
+
+For example, I want to launch Settings, which is the fifth one down in my favorites dash: Click on `switch-to-application-5` In the **Custom value** field add the appropriate information in this format. `['<super>5']`.
+
+Edit: Also toggle off the Use default value button.
+
 ## Instalar ISE Design Suite <img align="left" src="https://github.com/hunsrus/linux-config/blob/main/xilinx/ise_ds.png" width="32px">
 Las instrucciones y todo lo necesario está en la carpeta `xilinx`
 (No incluye instalador pesa una banda)
