@@ -31,6 +31,13 @@ For example, I want to launch Settings, which is the fifth one down in my favori
 
 Edit: Also toggle off the Use default value button.
 
+### Solución para Pop_OS
+Pop usa una versión modificada de *dash to dock* y se puede activar la funcionalidad usando también `dconf-editor`:
+```
+dconf-editor /org/gnome/shell/extensions/dash-to-dock
+```
+Activar el swith de `hot-keys` para devolver esa funcionalidad. Para que no muestre los números en el dock cuando se usa un atajo, desactivar `hotkeys-overlay` y `hotkeys-show-dock`.
+
 ## Instalar ISE Design Suite <img align="left" src="https://github.com/hunsrus/linux-config/blob/main/xilinx/ise_ds.png" width="32px">
 Las instrucciones y todo lo necesario está en la carpeta `xilinx`
 (No incluye instalador pesa una banda)
