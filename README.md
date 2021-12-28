@@ -1,3 +1,4 @@
+---
 # Soluciones
 ## Touchpad <img align="left" src="https://st.depositphotos.com/1010146/3709/v/600/depositphotos_37097981-stock-illustration-pointing-finger-click-icon.jpg" width="28px">
 Si el touchpad no funciona después de suspender, pegar `susp-touchpad.sh` en `/lib/systemd/system-sleep/`
@@ -52,7 +53,9 @@ Las instrucciones y todo lo necesario está en la carpeta `xilinx`
 8. Then apply all. Check your compiler and debugger and it's ok. You're done.
 
 Si los proyectos de qt corren bien pero marca errores en las clases como q_dialog, ir a "Help"->"About Plugins" y desactivar "ClangCodeModel". Reiniciar Qt.
-# Config <img align="left" src="https://triphase.com/img/support/46/config.png" width="60px">
+
+---
+# Config
 ## Tema de PopOS <img align="left" src="https://betanews.com/wp-content/uploads/2017/06/pop_logo.png" width="32px">
 Para instalar el tema de Pop OS:
 ```
@@ -108,3 +111,5 @@ Exlusivas pop:
 - ISE Design Suite
 - KiCad
 - Qt Creator
+
+---
