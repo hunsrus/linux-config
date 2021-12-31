@@ -112,4 +112,26 @@ Exlusivas pop:
 - KiCad
 - Qt Creator
 
+## Keybindings <img align="left" src="https://github.com/hunsrus/linux-config/blob/main/src/keybindings.png" width="34px">
+(crear script para setear automáticamente)
+## Apagar
+**Comando:** `poweroff`
+
+**Combinación:** Mayus+Super+P
+
+## Reiniciar
+**Comando:** `shutdown -r now`
+
+**Combinación:** Mayus+Super+R
+
+## Kill
+**Comando:** `kill`
+
+**Combinación:** Mayus+Super+X
+
+## Monitor del sistema
+**Comando:** `gnome-system-monitor`
+
+**Combinación:** Mayus+Ctrl+Escape
+
 ---
