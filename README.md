@@ -22,6 +22,7 @@ y agregar fuentes de microsoft ahí.
 ## Super+# <img align="left" src="https://cdn2.hubspot.net/hub/53/file-23123745-jpg/blog/images/hashtag.jpg" width="34px">
 Para el acceso directo con `Super+#` a las aplicaciones favoritas, la extensión Dash to Dock agrega la funcionalidad de nuevo.
 
+### Metodo sin Dash to Dock
 Using the `dconf-editor` method;
 ```
 dconf-editor /org/gnome/shell/keybindings
