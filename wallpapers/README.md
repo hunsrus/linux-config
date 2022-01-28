@@ -1,5 +1,5 @@
 # Fondos que se mimetizan con la barra superior de gnome y combinan con el tema de Pop_OS
-(Y de paso no me queman los ojos)
+Y de paso no queman los ojos
 
 ---
 -zgH.png
