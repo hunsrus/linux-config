@@ -2,6 +2,7 @@
 # Soluciones
 ## Touchpad <img align="left" src="https://st.depositphotos.com/1010146/3709/v/600/depositphotos_37097981-stock-illustration-pointing-finger-click-icon.jpg" width="28px">
 Si el touchpad no funciona después de suspender, pegar `susp-touchpad.sh` en `/lib/systemd/system-sleep/`
+(darle permisos de ejecución)
 ## Codecs Privativos <img align="left" src="https://www.iconpacks.net/icons/1/free-video-icon-831-thumb.png" width="36px">
 Instalar codecs privativos para reconocer más archivos multimedia
 ```
