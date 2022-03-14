@@ -1,4 +1,21 @@
 ---
+# Tabla de contenidos
+1. [Soluciones](https://github.com/hunsrus/linux-config#soluciones)
+    - [Touchpad](https://github.com/hunsrus/linux-config#touchpad-)
+    - [Codecs](https://github.com/hunsrus/linux-config#codecs-privativos-)
+    - [Arduino Original](https://github.com/hunsrus/linux-config#arduino-original-)
+    - [Formato Office](https://github.com/hunsrus/linux-config#formato-office-)
+    - [Super+#](https://github.com/hunsrus/linux-config#super-)
+      - [Metodo sin Dash to Dock](https://github.com/hunsrus/linux-config#metodo-sin-dash-to-dock)
+      - [Solución para Pop_OS](https://github.com/hunsrus/linux-config#soluci%C3%B3n-para-pop_os)
+    - [Instalar ISE Design Suite](https://github.com/hunsrus/linux-config#instalar-ise-design-suite-)
+    - [QtCreator kits](https://github.com/hunsrus/linux-config#qtcreator-rompe-las-bolas-con-los-kits-)
+2. [Config](https://github.com/hunsrus/linux-config#config)
+    - [Tema de PopOS](https://github.com/hunsrus/linux-config#tema-de-popos-)
+    - [Extensiones](https://github.com/hunsrus/linux-config#extensiones-)
+    - [Script instalador](https://github.com/hunsrus/linux-config#programas-que-insala-el-script-)
+    - [Keybindings](https://github.com/hunsrus/linux-config#keybindings-)
+---
 # Soluciones
 ## Touchpad <img align="left" src="https://st.depositphotos.com/1010146/3709/v/600/depositphotos_37097981-stock-illustration-pointing-finger-click-icon.jpg" width="28px">
 Si el touchpad no funciona después de suspender, pegar `susp-touchpad.sh` en `/lib/systemd/system-sleep/`
@@ -9,6 +26,8 @@ Instalar codecs privativos para reconocer más archivos multimedia
 sudo apt-get install ubuntu-restricted-extras
 ```
 ## Arduino Original <img align="left" src="https://electronperdido.com/wp-content/uploads/2021/02/arduino-logo-1.png" width="32px">
+Por lo general está mejor mantenido el paquete descargado directo de la [página de Arduino](https://www.arduino.cc/en/software). Usarlo preferentemente.
+
 Si no podes comunicarte con arduinos originales usando el IDE, instalá estos paquetes
 ```
 sudo apt-get install openjdk-8-jre avr-libc gcc-avr
