@@ -25,9 +25,19 @@ Instalar codecs privativos para reconocer más archivos multimedia
 ```
 sudo apt-get install ubuntu-restricted-extras
 ```
-## Arduino Original <img align="left" src="https://electronperdido.com/wp-content/uploads/2021/02/arduino-logo-1.png" width="32px">
-Por lo general está mejor mantenido el paquete descargado directo de la [página de Arduino](https://www.arduino.cc/en/software). Usarlo preferentemente.
-
+## Arduino <img align="left" src="https://electronperdido.com/wp-content/uploads/2021/02/arduino-logo-1.png" width="32px">
+Por lo general está mejor mantenido el paquete descargado directo de la [página de Arduino](https://www.arduino.cc/en/software).
+### Permisos
+Si al intentar subir un programa a la placa devuelve un error como el siguiente:
+```
+avrdude ser_open() can't open device /dev/ttyusb0 permission denied
+```
+Agregar el usuario al grupo ```dialouts```:
+```
+sudo adduser usuario dialouts
+```
+Reiniciar la sesión para que el cambio tenga efecto.
+### Original
 Si no podes comunicarte con arduinos originales usando el IDE, instalá estos paquetes
 ```
 sudo apt-get install openjdk-8-jre avr-libc gcc-avr
