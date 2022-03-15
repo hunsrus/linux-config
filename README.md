@@ -68,7 +68,7 @@ Pop usa una versión modificada de *dash to dock* y se puede activar la funciona
 ```
 dconf-editor /org/gnome/shell/extensions/dash-to-dock
 ```
-Activar el swith de `hot-keys` para devolver esa funcionalidad. Para que no muestre los números en el dock cuando se usa un atajo, desactivar `hotkeys-overlay` y `hotkeys-show-dock`.
+Activar el switch de `hot-keys` para devolver esa funcionalidad. Para que no muestre los números en el dock cuando se usa un atajo, desactivar `hotkeys-overlay` y `hotkeys-show-dock`.
 
 ## Instalar ISE Design Suite <img align="left" src="https://github.com/hunsrus/linux-config/blob/main/xilinx/ise_ds.png" width="32px">
 Las instrucciones y todo lo necesario está en la carpeta `xilinx`
@@ -83,7 +83,7 @@ Las instrucciones y todo lo necesario está en la carpeta `xilinx`
 7. Go to "Kits" combobox. Select Desktop(by default). Then scroll down to the button to select Qt version: and list down to select the version you just add. 
 8. Then apply all. Check your compiler and debugger and it's ok. You're done.
 
-Si después del paso 6 dice que no se instaló qt5 correctamente y necesitas hacer `make install`, prbablemente es porque no instalaste qt con el paquete `qt5-default` y falta instalar:
+Si después del paso 6 dice que no se instaló qt5 correctamente y necesitas hacer `make install`, probablemente es porque no instalaste qt con el paquete `qt5-default` y falta instalar:
 
 ```sudo apt-get install qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools```
 
