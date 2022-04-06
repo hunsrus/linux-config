@@ -169,4 +169,9 @@ Exlusivas pop:
 
 **Combinación:** Mayus+Ctrl+Escape
 
+## SSH Server
+**Comando:** `gnome-terminal --execute bash -c "ssh user@xxx.xxx.xxx.xxx -pXXXX"`
+
+**Combinación:** Mayus+Super+S
+
 ---
