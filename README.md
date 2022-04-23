@@ -84,11 +84,20 @@ Las instrucciones y todo lo necesario está en la carpeta `xilinx`
 8. Then apply all. Check your compiler and debugger and it's ok. You're done.
 
 Si después del paso 6 dice que no se instaló qt5 correctamente y necesitas hacer `make install`, probablemente es porque no instalaste qt con el paquete `qt5-default` y falta instalar:
-
-```sudo apt-get install qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools```
-
+```
+sudo apt-get install qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools
+```
 Si los proyectos de qt corren bien pero marca errores en las clases como q_dialog, ir a "Help"->"About Plugins" y desactivar "ClangCodeModel". Reiniciar Qt.
 
+## Cambiar magnet link handler por defecto <img align="left" src="https://cdn-icons-png.flaticon.com/512/2292/2292246.png" width="32px">
+Mostrar opciones:
+```
+gio mime x-scheme-handler/magnet
+```
+Determinar handler por defecto:
+```
+xdg-mime default HANDLER.desktop x-scheme-handler/magnet
+```
 ---
 # Config
 ## Tema de PopOS <img align="left" src="https://betanews.com/wp-content/uploads/2017/06/pop_logo.png" width="32px">
