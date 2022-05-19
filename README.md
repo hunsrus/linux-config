@@ -186,6 +186,16 @@ Exlusivas pop:
 ## SSH Server
 **Comando:** `gnome-terminal --execute bash -c "ssh user@xxx.xxx.xxx.xxx -pXXXX"`
 
+**Combinación:** Mayus+Super+D
+
+## Screenshot GUI
+**Comando:** `gnome-screenshot -i`
+
 **Combinación:** Mayus+Super+S
+
+## Carpeta Facultad
+**Comando:** `nautilus /media/$USER/DATOS/Facultad/`
+
+**Combinación:** Mayus+Super+F
 
 ---
