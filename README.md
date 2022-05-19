@@ -52,6 +52,7 @@ y agregar fuentes de microsoft ahí.
 ## Super+# <img align="left" src="https://cdn2.hubspot.net/hub/53/file-23123745-jpg/blog/images/hashtag.jpg" width="34px">
 Para el acceso directo con `Super+#` a las aplicaciones favoritas, la extensión Dash to Dock agrega la funcionalidad de nuevo.
 
+**Nota:** Para usar `dconf-editor` en los métodos siguientes **NO** instalar la versión *Flatpak*, instalar el paquete *.deb* preferentemente.
 ### Metodo sin Dash to Dock
 Using the `dconf-editor` method;
 ```
