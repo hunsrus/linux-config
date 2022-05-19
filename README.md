@@ -122,12 +122,12 @@ Monospace: `Fira Mono Regular 11`
 - [Ubuntu Appindicators](https://extensions.gnome.org/extension/615/appindicator-support/)
 - [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/)
 - [User Themes](https://extensions.gnome.org/extension/19/user-themes/) (para que funcione el tema de pop en el shell de gnome)
-- Color Picker
-- Hide Top Bar
-- Notification Timeout
-- Removable drive menu
+- [Color Picker](https://extensions.gnome.org/extension/3396/color-picker/)
+- [Hide Top Bar](https://extensions.gnome.org/extension/545/hide-top-bar/)
+- [Notification Timeout](https://extensions.gnome.org/extension/3795/notification-timeout/)
+- [Removable drive menu](https://extensions.gnome.org/extension/7/removable-drive-menu/)
 - Pop Shell
-- Vitals
+- [Vitals](https://extensions.gnome.org/extension/1460/vitals/)
 Exlusivas pop:
 - Cosmic Dock
 - Pop COSMIC
