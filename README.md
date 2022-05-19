@@ -128,6 +128,7 @@ Monospace: `Fira Mono Regular 11`
 - [Removable drive menu](https://extensions.gnome.org/extension/7/removable-drive-menu/)
 - Pop Shell
 - [Vitals](https://extensions.gnome.org/extension/1460/vitals/)
+
 Exlusivas pop:
 - Cosmic Dock
 - Pop COSMIC
