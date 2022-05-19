@@ -127,6 +127,7 @@ Monospace: `Fira Mono Regular 11`
 - Notification Timeout
 - Removable drive menu
 - Pop Shell
+- Vitals
 Exlusivas pop:
 - Cosmic Dock
 - Pop COSMIC
