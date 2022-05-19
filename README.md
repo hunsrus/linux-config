@@ -155,6 +155,11 @@ Exlusivas pop:
 - ISE Design Suite
 - KiCad
 - Qt Creator
+- Audacity
+- Gabut DM
+- Telegram Desktop
+- Vim
+- Visual Studio Code
 
 ## Keybindings <img align="left" src="https://github.com/hunsrus/linux-config/blob/main/src/keybindings.png" width="34px">
 (crear script para setear automáticamente)
