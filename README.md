@@ -160,6 +160,7 @@ Exlusivas pop:
 - Telegram Desktop
 - Vim
 - Visual Studio Code
+- Xournal
 
 ## Keybindings <img align="left" src="https://github.com/hunsrus/linux-config/blob/main/src/keybindings.png" width="34px">
 (crear script para setear automáticamente)
