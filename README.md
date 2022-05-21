@@ -127,8 +127,9 @@ Monospace: `Fira Mono Regular 11`
 - [Hide Top Bar](https://extensions.gnome.org/extension/545/hide-top-bar/)
 - [Notification Timeout](https://extensions.gnome.org/extension/3795/notification-timeout/)
 - [Removable drive menu](https://extensions.gnome.org/extension/7/removable-drive-menu/)
-- Pop Shell
+- [GSConnect](https://extensions.gnome.org/extension/1319/gsconnect/)
 - [Vitals](https://extensions.gnome.org/extension/1460/vitals/)
+- Pop Shell
 
 Exlusivas pop:
 - Cosmic Dock
