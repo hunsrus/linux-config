@@ -10,6 +10,7 @@
       - [Solución para Pop_OS](https://github.com/hunsrus/linux-config#soluci%C3%B3n-para-pop_os)
     - [Instalar ISE Design Suite](https://github.com/hunsrus/linux-config#instalar-ise-design-suite-)
     - [QtCreator kits](https://github.com/hunsrus/linux-config#qtcreator-rompe-las-bolas-con-los-kits-)
+    - [Default magnet link handler](https://github.com/hunsrus/linux-config#cambiar-magnet-link-handler-por-defecto-)
 2. [Config](https://github.com/hunsrus/linux-config#config)
     - [Tema de PopOS](https://github.com/hunsrus/linux-config#tema-de-popos-)
     - [Extensiones](https://github.com/hunsrus/linux-config#extensiones-)
