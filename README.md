@@ -180,7 +180,7 @@ Exlusivas pop:
 **Combinación:** Mayus+Super+R
 
 ## Kill
-**Comando:** `kill`
+**Comando:** `xkill`
 
 **Combinación:** Mayus+Super+X
 
