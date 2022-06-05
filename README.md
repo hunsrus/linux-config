@@ -130,6 +130,21 @@ Monospace: `Fira Mono Regular 11`
 - [Removable drive menu](https://extensions.gnome.org/extension/7/removable-drive-menu/)
 - [GSConnect](https://extensions.gnome.org/extension/1319/gsconnect/)
 - [Vitals](https://extensions.gnome.org/extension/1460/vitals/)
+- [DDC Brightness Control](https://extensions.gnome.org/extension/2645/brightness-control-using-ddcutil/)
+  1. Install `ddcutil`
+  ```
+  sudo apt install ddcutil
+  ```
+  2. Set I2C permissions for non-root users:
+  ```
+  sudo adduser $USER i2c
+  sudo /bin/sh -c 'echo i2c-dev >> /etc/modules'
+  ```
+  3. Reboot needed
+- [Bluetooth Quick Connect](https://extensions.gnome.org/extension/1401/bluetooth-quick-connect/)
+- [Fly-Pie](https://extensions.gnome.org/extension/3433/fly-pie/)
+- [Sound Output Device Chooser](https://extensions.gnome.org/extension/906/sound-output-device-chooser/)
+- [True Color Invert](https://extensions.gnome.org/extension/3530/true-color-invert/)
 - Pop Shell
 
 Exlusivas pop:
