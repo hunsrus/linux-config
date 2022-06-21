@@ -11,6 +11,7 @@
     - [Instalar ISE Design Suite](https://github.com/hunsrus/linux-config#instalar-ise-design-suite-)
     - [QtCreator kits](https://github.com/hunsrus/linux-config#qtcreator-rompe-las-bolas-con-los-kits-)
     - [Default magnet link handler](https://github.com/hunsrus/linux-config#cambiar-magnet-link-handler-por-defecto-)
+    - [Default to high performance mode](https://github.com/hunsrus/linux-config#default-to-high-performance-mode-)
 2. [Config](https://github.com/hunsrus/linux-config#config)
     - [Tema de PopOS](https://github.com/hunsrus/linux-config#tema-de-popos-)
     - [Extensiones](https://github.com/hunsrus/linux-config#extensiones-)
@@ -100,6 +101,11 @@ Determinar handler por defecto:
 ```
 xdg-mime default HANDLER.desktop x-scheme-handler/magnet
 ```
+
+## Default to high performance mode
+Para que el sistema inicie en modo de alto rendimiento agregar el comando a las aplicaciones de inicio:
+
+    system76-power profile performance
 ---
 # Config
 ## Tema de PopOS <img align="left" src="https://betanews.com/wp-content/uploads/2017/06/pop_logo.png" width="32px">
