@@ -12,7 +12,7 @@
     - [QtCreator kits](https://github.com/hunsrus/linux-config#qtcreator-rompe-las-bolas-con-los-kits-)
     - [Default magnet link handler](https://github.com/hunsrus/linux-config#cambiar-magnet-link-handler-por-defecto-)
     - [Default to high performance mode](https://github.com/hunsrus/linux-config#default-to-high-performance-mode)
-    - [Solución MATLAB](https://github.com/hunsrus/linux-config#solucion-matlab)
+    - [Solución MATLAB](https://github.com/hunsrus/linux-config#solución-matlab)
 2. [Config](https://github.com/hunsrus/linux-config#config)
     - [Tema de PopOS](https://github.com/hunsrus/linux-config#tema-de-popos-)
     - [Extensiones](https://github.com/hunsrus/linux-config#extensiones-)
