@@ -12,6 +12,7 @@
     - [QtCreator kits](https://github.com/hunsrus/linux-config#qtcreator-rompe-las-bolas-con-los-kits-)
     - [Default magnet link handler](https://github.com/hunsrus/linux-config#cambiar-magnet-link-handler-por-defecto-)
     - [Default to high performance mode](https://github.com/hunsrus/linux-config#default-to-high-performance-mode)
+    - [Solución MATLAB](https://github.com/hunsrus/linux-config#solucion-matlab)
 2. [Config](https://github.com/hunsrus/linux-config#config)
     - [Tema de PopOS](https://github.com/hunsrus/linux-config#tema-de-popos-)
     - [Extensiones](https://github.com/hunsrus/linux-config#extensiones-)
@@ -106,6 +107,11 @@ xdg-mime default HANDLER.desktop x-scheme-handler/magnet
 Para que el sistema inicie en modo de alto rendimiento agregar el comando a las aplicaciones de inicio:
 
     system76-power profile performance
+
+## Solución MATLAB
+Si lo que falta empieza con g, excluir librerías en ```cefclient/sys/os/glnxa64/``` hasta que el error empiece con FT. (Se nota que no tengo la menor idea de por qué funciona esto).
+En ese caso excluir la librería ```libfreetype``` en ```bin/glnxa64/```
+
 ---
 # Config
 ## Tema de PopOS <img align="left" src="https://betanews.com/wp-content/uploads/2017/06/pop_logo.png" width="32px">
