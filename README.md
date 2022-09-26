@@ -130,6 +130,11 @@ Interface: `Fira Sans Book 10`
 Documents: `Roboto Slab Regular 11`
 
 Monospace: `Fira Mono Regular 11`
+## Firefox url bar <img align="left" src="https://betanews.com/wp-content/uploads/2017/06/pop_logo.png" width="32px">
+Por defecto, las modificaciones en `userChrome.css` están desabilitadas en Firefox. Primero hay que asegurarse que en la página `about:config` de Firefox, la preferencia `toolkit.legacyUserProfileCustomizations.stylesheets` esté seteada en `true` y luego reiniciar el buscador.
+
+Una vez habilitadas las modificaciones, ir a `Menu`->`Help`->`More troubleshooting information` (o directamente ir a `about:support`) y buscar el campo `Profile Directory`. Ir al directorio indicado y pegar la carpeta [chrome](https://github.com/hunsrus/linux-config/tree/main/chrome) conteniendo el archivo `userChrome.css` con las modificaciones perinentes.
+En este caso, el archivo contiene código para ocultar la barra url y mostrarla al pasar el mouse por encima.
 ## Extensiones <img align="left" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Antu_kt-plugins.svg/1024px-Antu_kt-plugins.svg.png" width="34px">
 - [Caffeine](https://extensions.gnome.org/extension/517/caffeine/)
 - [Unite](https://extensions.gnome.org/extension/1287/unite/)
