@@ -20,15 +20,15 @@
     - [Keybindings](https://github.com/hunsrus/linux-config#keybindings-)
 ---
 # Soluciones
-## Touchpad <img align="left" src="https://st.depositphotos.com/1010146/3709/v/600/depositphotos_37097981-stock-illustration-pointing-finger-click-icon.jpg" width="28px">
+## Touchpad <img align="left" src="https://github.com/hunsrus/linux-config/blob/main/src/touchpad.png" width="28px">
 Si el touchpad no funciona después de suspender, pegar `susp-touchpad.sh` en `/lib/systemd/system-sleep/`
 (darle permisos de ejecución)
-## Codecs Privativos <img align="left" src="https://www.iconpacks.net/icons/1/free-video-icon-831-thumb.png" width="36px">
+## Codecs Privativos <img align="left" src="https://github.com/hunsrus/linux-config/blob/main/src/codecs.png" width="36px">
 Instalar codecs privativos para reconocer más archivos multimedia
 ```
 sudo apt-get install ubuntu-restricted-extras
 ```
-## Arduino <img align="left" src="https://electronperdido.com/wp-content/uploads/2021/02/arduino-logo-1.png" width="32px">
+## Arduino <img align="left" src="https://github.com/hunsrus/linux-config/blob/main/src/arduino.png" width="32px">
 Por lo general está mejor mantenido el paquete descargado directo de la [página de Arduino](https://www.arduino.cc/en/software).
 ### Permisos
 Si al intentar subir un programa a la placa devuelve un error como el siguiente:
@@ -45,14 +45,14 @@ Si no podes comunicarte con arduinos originales usando el IDE, instalá estos pa
 ```
 sudo apt-get install openjdk-8-jre avr-libc gcc-avr
 ```
-## Formato Office <img align="left" src="https://download.onlyoffice.com/assets/fb/fb_icon_325x325.jpg" width="32px">
+## Formato Office <img align="left" src="https://github.com/hunsrus/linux-config/blob/main/src/office.png" width="32px">
 Para que el formato en WPS sea más cercano a Office, crear carpeta
 ```
 sudo mkdir /usr/share/fonts/wps-fonts
 ```
 y agregar fuentes de microsoft ahí.
 (Para OnlyOffice agregar las fuentes normalmente)
-## Super+# <img align="left" src="https://cdn2.hubspot.net/hub/53/file-23123745-jpg/blog/images/hashtag.jpg" width="34px">
+## Super+# <img align="left" src="https://github.com/hunsrus/linux-config/blob/main/src/hashtag.png" width="34px">
 Para el acceso directo con `Super+#` a las aplicaciones favoritas, la extensión Dash to Dock agrega la funcionalidad de nuevo.
 
 **Nota:** Para usar `dconf-editor` en los métodos siguientes **NO** instalar la versión *Flatpak*, instalar el paquete *.deb* preferentemente.
@@ -74,10 +74,10 @@ dconf-editor /org/gnome/shell/extensions/dash-to-dock
 ```
 Activar el switch de `hot-keys` para devolver esa funcionalidad. Para que no muestre los números en el dock cuando se usa un atajo, desactivar `hotkeys-overlay` y `hotkeys-show-dock`.
 
-## Instalar ISE Design Suite <img align="left" src="https://github.com/hunsrus/linux-config/blob/main/xilinx/ise_ds.png" width="32px">
+## Instalar ISE Design Suite <img align="left" src="https://github.com/hunsrus/linux-config/blob/main/src/ise_de.png" width="32px">
 Las instrucciones y todo lo necesario está en la carpeta `xilinx`
 (No incluye instalador pesa una banda)
-## QtCreator rompe las bolas con los kits <img align="left" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Qt_logo_2016.svg/1200px-Qt_logo_2016.svg.png" width="36px">
+## QtCreator rompe las bolas con los kits <img align="left" src="https://github.com/hunsrus/linux-config/blob/main/src/qt.png" width="36px">
 1. Execute in your terminal the command: `sudo apt-get install qt5-default` to install qt version 5.
 2. Verify the version of your Qt and the location of your qmake file. Do this by executing in your terminal the command `qmake --version`. You may have a result similar to this line. QMake version 3.1 Using Qt version 5.9.5 in `/usr/lib/x86_64-linux-gnu`. What's important here is the location `/usr/lib/x86_64-linux-gnu`.
 3. Open your Qt-creator.
@@ -93,7 +93,7 @@ sudo apt-get install qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools
 ```
 Si los proyectos de qt corren bien pero marca errores en las clases como q_dialog, ir a "Help"->"About Plugins" y desactivar "ClangCodeModel". Reiniciar Qt.
 
-## Cambiar magnet link handler por defecto <img align="left" src="https://cdn-icons-png.flaticon.com/512/2292/2292246.png" width="32px">
+## Cambiar magnet link handler por defecto <img align="left" src="https://github.com/hunsrus/linux-config/blob/main/src/magnet.png" width="32px">
 Mostrar opciones:
 ```
 gio mime x-scheme-handler/magnet
@@ -103,18 +103,18 @@ Determinar handler por defecto:
 xdg-mime default HANDLER.desktop x-scheme-handler/magnet
 ```
 
-## Default to high performance mode
+## Default to high performance mode <img align="left" src="https://github.com/hunsrus/linux-config/blob/main/src/performance.png" width="32px">
 Para que el sistema inicie en modo de alto rendimiento agregar el comando a las aplicaciones de inicio:
 
     system76-power profile performance
 
-## Solución MATLAB
+## Solución MATLAB <img align="left" src="https://github.com/hunsrus/linux-config/blob/main/src/matlab.png" width="32px">
 Si lo que falta empieza con g, excluir librerías en ```cefclient/sys/os/glnxa64/``` hasta que el error empiece con FT. (Se nota que no tengo la menor idea de por qué funciona esto).
 En ese caso excluir la librería ```libfreetype``` en ```bin/glnxa64/```
 
 ---
 # Config
-## Tema de PopOS <img align="left" src="https://betanews.com/wp-content/uploads/2017/06/pop_logo.png" width="32px">
+## Tema de PopOS <img align="left" src="https://github.com/hunsrus/linux-config/blob/main/src/pop.png" width="32px">
 Para instalar el tema de Pop OS:
 ```
 sudo apt-add-repository ppa:system76/pop
@@ -130,12 +130,12 @@ Interface: `Fira Sans Book 10`
 Documents: `Roboto Slab Regular 11`
 
 Monospace: `Fira Mono Regular 11`
-## Firefox url bar <img align="left" src="https://betanews.com/wp-content/uploads/2017/06/pop_logo.png" width="32px">
+## Firefox url bar <img align="left" src="https://github.com/hunsrus/linux-config/blob/main/src/firefox.png" width="32px">
 Por defecto, las modificaciones en `userChrome.css` están desabilitadas en Firefox. Primero hay que asegurarse que en la página `about:config` de Firefox, la preferencia `toolkit.legacyUserProfileCustomizations.stylesheets` esté seteada en `true` y luego reiniciar el buscador.
 
 Una vez habilitadas las modificaciones, ir a `Menu`->`Help`->`More troubleshooting information` (o directamente ir a `about:support`) y buscar el campo `Profile Directory`. Ir al directorio indicado y pegar la carpeta [chrome](https://github.com/hunsrus/linux-config/tree/main/chrome) conteniendo el archivo `userChrome.css` con las modificaciones perinentes.
 En este caso, el archivo contiene código para ocultar la barra url y mostrarla al pasar el mouse por encima.
-## Extensiones <img align="left" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Antu_kt-plugins.svg/1024px-Antu_kt-plugins.svg.png" width="34px">
+## Extensiones <img align="left" src="https://github.com/hunsrus/linux-config/blob/main/src/extensiones.png" width="32px">
 - [Caffeine](https://extensions.gnome.org/extension/517/caffeine/)
 - [Unite](https://extensions.gnome.org/extension/1287/unite/)
 - [Ubuntu Appindicators](https://extensions.gnome.org/extension/615/appindicator-support/)
@@ -168,7 +168,7 @@ Exlusivas pop:
 - Cosmic Dock
 - Pop COSMIC
 - System76 Power
-## Programas que insala el script <img align="left" src="https://zhihuicao.files.wordpress.com/2016/03/2000px-poundexclam-svg.png" width="34px">
+## Programas que insala el script <img align="left" src="https://github.com/hunsrus/linux-config/blob/main/src/crunchbang.png" width="32px">
 - Google Chrome
 - Spotify
 - VLC
@@ -199,7 +199,7 @@ Exlusivas pop:
 - Visual Studio Code
 - Xournal
 
-## Keybindings <img align="left" src="https://github.com/hunsrus/linux-config/blob/main/src/keybindings.png" width="34px">
+## Keybindings <img align="left" src="https://github.com/hunsrus/linux-config/blob/main/src/keybinding.png" width="32px">
 (crear script para setear automáticamente)
 ## Apagar
 **Comando:** `poweroff`
