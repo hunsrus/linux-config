@@ -112,6 +112,34 @@ Para que el sistema inicie en modo de alto rendimiento agregar el comando a las 
 Si lo que falta empieza con g, excluir librerías en ```cefclient/sys/os/glnxa64/``` hasta que el error empiece con FT. (Se nota que no tengo la menor idea de por qué funciona esto).
 En ese caso excluir la librería ```libfreetype``` en ```bin/glnxa64/```
 
+## Configuración de LaTeX <img align="left" src="https://github.com/hunsrus/linux-config/blob/main/src/latex.png" width="32px">
+Los pasos para la descarga e instalación son los siguientes (instalar con ```apt-get``` no es recomendado):
+
+Ir a la carpeta temporal (o cualquier otra a elección)
+    
+    cd /tmp
+
+Descargar el instalador con ```wget``` (o ```curl```)
+
+    wget https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+
+Descomprimir
+    
+    zcat install-tl-unx.tar.gz | tar xf -
+    
+Entrar en la carpeta del instalador
+
+    cd install-tl-*
+
+Instalar con ```perl```
+
+    perl ./install-tl --no-interaction
+    
+Finalmente, agregar ```/usr/local/texlive/YYYY/bin/PLATFORM``` a ```PATH``` en el archivo ```.profile```,
+por ejemplo con
+
+    export PATH="/usr/local/texlive/2022/bin/x86_64-linux/:$PATH"
+
 ---
 # Config
 ## Tema de PopOS <img align="left" src="https://github.com/hunsrus/linux-config/blob/main/src/pop.png" width="32px">
