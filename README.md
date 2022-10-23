@@ -3,7 +3,7 @@
 1. [Soluciones](https://github.com/hunsrus/linux-config#soluciones)
     - [Touchpad](https://github.com/hunsrus/linux-config#touchpad-)
     - [Codecs](https://github.com/hunsrus/linux-config#codecs-privativos-)
-    - [Arduino Original](https://github.com/hunsrus/linux-config#arduino-original-)
+    - [Arduino Original](https://github.com/hunsrus/linux-config#arduino-)
     - [Formato Office](https://github.com/hunsrus/linux-config#formato-office-)
     - [Super+#](https://github.com/hunsrus/linux-config#super-)
       - [Metodo sin Dash to Dock](https://github.com/hunsrus/linux-config#metodo-sin-dash-to-dock)
@@ -11,8 +11,9 @@
     - [Instalar ISE Design Suite](https://github.com/hunsrus/linux-config#instalar-ise-design-suite-)
     - [QtCreator kits](https://github.com/hunsrus/linux-config#qtcreator-rompe-las-bolas-con-los-kits-)
     - [Default magnet link handler](https://github.com/hunsrus/linux-config#cambiar-magnet-link-handler-por-defecto-)
-    - [Default to high performance mode](https://github.com/hunsrus/linux-config#default-to-high-performance-mode)
-    - [Solución MATLAB](https://github.com/hunsrus/linux-config#solución-matlab)
+    - [Default to high performance mode](https://github.com/hunsrus/linux-config#default-to-high-performance-mode-)
+    - [Solución MATLAB](https://github.com/hunsrus/linux-config#soluci%C3%B3n-matlab-)
+    - [Instalación de LaTeX](https://github.com/hunsrus/linux-config#instalaci%C3%B3n-de-latex-)
 2. [Config](https://github.com/hunsrus/linux-config#config)
     - [Tema de PopOS](https://github.com/hunsrus/linux-config#tema-de-popos-)
     - [Extensiones](https://github.com/hunsrus/linux-config#extensiones-)
@@ -112,7 +113,7 @@ Para que el sistema inicie en modo de alto rendimiento agregar el comando a las 
 Si lo que falta empieza con g, excluir librerías en ```cefclient/sys/os/glnxa64/``` hasta que el error empiece con FT. (Se nota que no tengo la menor idea de por qué funciona esto).
 En ese caso excluir la librería ```libfreetype``` en ```bin/glnxa64/```
 
-## Configuración de LaTeX <img align="left" src="https://github.com/hunsrus/linux-config/blob/main/src/latex.png" width="32px">
+## Instalación de LaTeX <img align="left" src="https://github.com/hunsrus/linux-config/blob/main/src/latex.png" width="32px">
 Los pasos para la descarga e instalación son los siguientes (instalar con ```apt-get``` no es recomendado):
 
 Ir a la carpeta temporal (o cualquier otra a elección)
