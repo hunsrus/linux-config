@@ -1,0 +1,164 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{esint}
+\usepackage{multicol}
+
+\setlength{\marginparwidth}{2cm}
+\begin{document}
+\begin{titlepage}
+	\begin{center}
+		{\large{UNIVERSIDAD TECNOLÓGICA NACIONAL}}
+	\end{center}
+	\vspace{15pt}
+	\begin{figure}[!ht]
+		\centering
+		\begin{center}
+			\includegraphics[width=5cm]{utn.png}
+		\end{center}
+	\end{figure}
+	\vspace{5pt}
+	\begin{center}
+		{\large{FACULTAD REGIONAL PARANÁ}}
+		\vspace{5pt}
+		\begin{center}
+			\vspace{15pt}
+			\normalsize{CARRERA: Ingeniería Electrónica\\
+						CÁTEDRA: Nombre de la Cátedra\\}
+			\vspace{50pt}
+			\huge\bfseries{Trabajo Práctico N°X\\
+						Tema del trabajo práctico\\}
+			\vspace{50pt}
+		\end{center}
+		
+		\begin{flushleft}
+			\begin{center}
+				ALUMNOS:\\
+				Battaglia Carlo\\
+				Efchi Mauro\\
+				Escobar Gabriel\\
+			\end{center}
+		\end{flushleft}
+		
+		\begin{center}
+			\vspace{\fill}
+			\normalsize{Paraná,}
+			\today
+		\end{center}
+	\end{center}
+\end{titlepage}
+
+\newpage
+\pagenumbering{gobble}
+\tableofcontents
+
+\newpage
+\pagenumbering{arabic}
+\numberwithin{equation}{section}
+
+\section{Enunciado 1}
+Resolvente
+\begin{equation}
+	x=\frac{-b\pm\sqrt{b-4ac}}{2a}
+\end{equation}
+\subsection{Consigna A}
+Ecuaciones de Maxwell en forma diferencial
+\begin{equation}
+	\nabla\times B=\mu_{0} J+\mu_{0}\epsilon_{0}\frac{\partial E}{\partial t}
+\end{equation}
+\begin{equation}
+	\nabla\times E=-\frac{\partial B}{\partial t}
+\end{equation}
+\begin{equation}
+	\nabla\cdot E=\frac{\rho}{\epsilon_{0}}
+\end{equation}
+\begin{equation}
+	\nabla\cdot B=0
+\end{equation}
+\subsection{Consigna B}
+Ecuaciones de Maxwell en forma integral
+\begin{equation}
+	\oint_{\partial\Sigma}{B\cdot\partial l}=\mu_{0}\Big(\iint_{\Sigma}{J\cdot dS}+\epsilon_{0}\frac{d}{dt}\iint_{\Sigma}{E\cdot dS}\Big)
+\end{equation}
+\begin{equation}
+	\oint_{\partial\Sigma}{E\cdot\partial l}=-\frac{d}{dt}\iint_{\Sigma}{B\cdot dS}
+\end{equation}
+\begin{equation}
+	\oiint_{\partial\Omega}{E\cdot dS}=\frac{1}{\epsilon_{0}}\iiint_{\Omega}{\rho dV}
+\end{equation}
+\begin{equation}
+	\oiint_{\partial\Omega}{B\cdot dS}=0
+\end{equation}
+\section{Enunciado 2}
+\begin{equation}
+	E=mc^2
+\end{equation}
+In the equation, the increased relativistic mass $m$ of a body times the speed of light squared $c^2$ is equal to the kinetic energy $E$ of that body.
+\newpage
+\subsection{Consigna A}
+\begin{multicols}{2}
+De todas tus mentiras guardo un mal sabor
+Y mentiras ya no quiero más
+No pierdas más tu tiempo en pedir perdón
+Pues te juro que no me vuelvo atrás
+
+No me pidas que haga la locura
+De creerte una vez más
+No más regálame la última luna
+Una noche que no olvide jamás
+
+Desnúdame de a poco
+Y bésame a lo loco
+Invéntame un momento
+Que no tenga final
+
+Aprisióname en tus brazos
+Quiébrame en pedazos
+Arrójalos al viento
+Ámame una vez más
+
+No hay nada mas difícil que decirte adiós
+Porque sé muy bien que nunca más
+Podré olvidar la música que hay en tu voz
+El perfume de tu piel, tu mirar
+%\columnbreak
+Sé que me esperan horas muy oscuras
+Y sé que voy a llorar
+Pero hoy regálame la última Luna
+Y una noche que no olvide jamás
+
+Enrédate en mi pelo
+Consúmeme en tu fuego
+Muérdeme los labios
+No me tengas piedad
+
+Devórame esta noche
+Con besos que me asombren
+Y que mi propio nombre
+Me hagan olvidar
+
+Desnúdame de a poco
+Y bésame a lo loco
+Invéntame un momento
+Que no tenga final
+
+Aprisióname en tus brazos
+Y quiébrame en pedazos
+Arrójalos al viento
+Ámame una vez más
+\end{multicols}
+\section{Enunciado 3}
+Desarrollo consigna 3
+
+\newpage
+\section{Referencias}
+ 
+[1] Shanmugan, K.S. -- Digital and Analog Communication Systems, 1° Edición;
+
+[2] Pueyo, H.O. -- Marco, C. -- Análisis de Modelos Circuitales, 1° Edición;
+
+\end{document}
