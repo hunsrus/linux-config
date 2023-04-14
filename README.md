@@ -266,3 +266,274 @@ Exlusivas pop:
 **Combinación:** Mayus+Super+F
 
 ---
+# Arch
+## WiFi <img align="left" src="https://github.com/hunsrus/linux-config/blob/main/src/crunchbang.png" width="32px">
+### netctl
+explicacion de uso de netctl-auto
+### NetworkManager
+explicacion de uso de NetworkManager
+
+## NTFS
+Para poder montar discos NTFS instalar `ntfs-3g`
+```
+sudo pacman -S ntfs-3g
+```
+Crear la carpeta `media`
+```
+sudo mkdir /media
+```
+Y montar ahí el disco
+```
+sudo mount --mkdir /dev/sdxx /media/DATOS
+```
+## Wallpaper
+Instalar `feh`
+```
+sudo pacman -S feh
+```
+Uso:
+```
+feh --bg-scale /path/to/image.file
+```
+
+## audio
+https://wiki.archlinux.org/title/Advanced_Linux_Sound_Architecture
+https://dev.to/setevoy/linux-alsa-lib-pcmdmixc1108sndpcmdmixopen-unable-to-open-slave-38on
+
+## bluethooth audio
+https://unix.stackexchange.com/questions/703088/bluetooth-headset-unable-to-connect-org-bluez-error-failed-br-connection-profil
+https://wiki.archlinux.org/title/Bluetooth#Audio
+
+## fonts
+Para instalar para todos los usuarios, mover carpeta de la fuente a
+```
+/usr/local/share/fonts
+```
+
+## composer REVISAR (creo que uso otro build)
+Un compositor posible es `picom`
+```
+sudo pacman -S picom
+mkdir /home/gabriel/.config/picom
+cp /etc/xdg/picom.conf /home/gabriel/.config/picom
+```
+modificar a gusto (desactivar sombras y redondear bordes)
+```
+picom --config /home/gabriel/.config/picom/picom.conf
+```
+FALTA LO DE -B PARA CORRER EN SEGUNDO PLANO
+
+### picom exlude window
+Para saber la clase de la ventana y especificarla, ejecutar
+```
+xprop
+```
+Hacer click en la ventana y xprop va a tirar toda la información. Buscar el dato `WM_CLASS` y usar eso como identificador en el archivo de configuracion de picom.
+Por ejemplo, para excluir una ventana de las reglas de opacidad, modificar la sección de `opacity-rule` y agregar:
+```
+"100:class_g *= 'texto presente en WM_CLASS'"
+```
+
+## autostart
+AGREGAR INFORMACIÓN SOBRE EL PATCH DE AUTOSTART PARA DWM
+Dar permisos de ejecucion a `.dwm/autostart.sh`.
+Agregar en este archivo todo lo que se quiera ejecutar al inicio.
+AGREGAR INFORMACIÓN SOBRE LA EJECUCIÓN DE COMANDOS EN ORDEN Y EN SIMULTÁNEO
+
+## kdeconnect
+```
+sudo pacman -S kdeconnect
+/usr/lib/kdeconnect
+```
+
+## gestión de monitores
+```
+git clone https://aur.archlinux.org/mons.git
+cd mons/
+```
+(instalar dependencias)
+```
+sudo pacman -S help2man
+makepkg
+git clean dfx
+sudo pacman -U mons-0.8.2-1-any.pkg.tar.zst
+```
+Ejemplo: extender el monitor a la izquierda
+```
+mons -e left (extender monitor a la izquierda)
+```
+
+## screenshots
+```
+sudo pacman -S maim
+```
+Sacar una captura de toda la pantalla y guardarla en la ruta de capturas con la fecha como nombre:
+```
+maim ~/Imágenes/Capturas\ de\ pantalla/$(date +%s).png
+```
+Asignar el comando a la tecla de imprimir pantalla:
+Para identificar la tecla, usar
+```
+xbindkeys --key
+```
+Despues de este comando apretar la tecla y las dos ultimas lineas que aparecen son identificadores que se pueden usar en `.xbindkeysrc`.
+Por ejemplo, un identificador cómodo es `Print`.
+
+Pegar el siguiente comando en `.xbindkeysrc`:
+```
+"maim ~/Imágenes/Capturas\ de\ pantalla/$(date +%s).png"
+    Print
+```
+(creo que hay que reiniciar para que tome efecto)
+
+## montar particion de disco identificandola por UUID
+Primero averiguar el UUID
+```
+ls -l /dev/disk/by-uuid/
+```
+Usar este uuid como argumento para `mount`
+```
+sudo mount UUID=ARGUMENTO /media/DATOS/
+```
+Montar en `/media/DATOS` o donde sea
+(agregar el comando al autostart)
+NO FUNCIONA BIEN
+SI LO HACES CON GNOME-DISKS ES MAS FACIL Y DESPUES DE CONFIGURAR EL MONTADO AUTOMATICO TENES QUE REINICIAR SYSTEMD PORQUE SIGUE USANDO LA VERSIÓN VIEJA DE FSTAB
+```
+sudo systemctl daemon-reload
+```
+
+## distribución de teclado US con acentos
+
+https://bbs.archlinux.org/viewtopic.php?id=85392
+```
+cd /usr/share/X11/xorg.conf.d/
+vim 50-gabriel.conf
+```
+Pegar lo siguiente:
+```
+Section "InputClass"
+    Identifier             "Keyboard Defaults"
+    MatchIsKeyboard        "yes"
+    Option                 "XkbLayout" "us"
+    Option                 "XkbVariant" "intl"
+EndSection
+```
+
+## configurar fuente en dwm
+Explicacion del formato de los parametros:
+https://keithp.com/~keithp/render/Xft.tutorial
+
+## dar permiso para apagar a un usuario común a través de polkit
+http://www.lukylx.org/polkit.html
+```
+vim /etc/polkit-1/rulse.d/40-allow-shutdown.rules
+```
+Pegar:
+```
+/* Allow specific users to shutdown without authentication */
+polkit.addRule(function(action, subject) {
+   if ( ( action.id == "org.freedesktop.login1.power-off" ||
+          action.id == "org.freedesktop.login1.power-off-multiple-sessions"
+        ) && subject.isInGroup("power") ) {
+     polkit.log("Powering Off permitted for subject" + subject)
+     return polkit.Result.YES;
+   }
+});
+```
+
+## habilitar los repositorios `multilib`
+Son necesarios para instalar `wine` por ejemplo.
+En el archivo:
+```
+sudo vim /etc/pacman.conf
+```
+Descomentar:
+```
+[multilib]
+Include = /etc/pacman.d/mirrorlist
+```
+IMPORTANTE DESCOMENTAR AMBAS LINEAS
+
+## instalar iconos y cursor de pop-os
+dependencias: `meson`, `git`
+```
+yay -S pop-icon-theme
+```
+Para tener el dark descargar del repositorio https://github.com/pop-os/icon-theme y copiar la carpeta `Pop-Dark` en `/usr/share/icons` o donde estés instalando los iconos
+```
+vim .config/gtk-4.0/settings.ini
+gtk-icon-theme-name=Pop-Dark
+```
+
+## ocultar csd (client side decorations [botones inútiles de ventana]) en gtk
+Editar:
+```
+vim .config/gtk-4.0/settings.ini
+```
+Agregar:
+```
+gtk-decoration-layout=:menu
+```
+(hacer lo mismo para las demás versiones de gtk si es necesario)
+
+## keep screen on
+```
+xset s off & xset -dpms
+```
+
+## juegos viejos de 32 bits
+Por ejemplo CMR 2.0
+
+Instalar `wine`
+```
+sudo pacman -S wine
+```
+Instalar drivers de audio de 32 bits
+```
+sudo pacman -S lib32-alsa-lib lib32-alsa-plugins
+sudo pacman -S libpulse lib32-libpulse
+```
+Instalar drivers gráficos de 32 bits
+```
+sudo pacman -S lib32-mesa
+```
+Instalar Vulkan de 64 y 32 bits (no recuerdo si es necesario, creo que lo vi en archwiki de steam)
+```
+sudo pacman -S vulkan-icd-loader lib32-vulkan-icd-loader
+sudo pacman -S vulkan-intel lib32-vulkan-intel
+```
+
+## abrir terminal desde nautilus
+```
+yay -S nautilus-open-any-terminal
+```
+Elegir la terminal (en este caso `alacritty`)
+```
+gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal alacritty
+```
+
+## error con aplicaciones java
+En caso de que alguna aplicación hecha con Java no muestre correctamente el contenido (caso de software de osciloscopio owon), setear la siguiente environment variable
+```
+export _JAVA_AWT_WM_NONREPARENTING=1
+```
+
+## brillo
+crear archivo `rules`
+```
+sudo vim /etc/udev/rules.d/backlight.rules
+```
+pegar lo siguiente (permite que usuarios en el grupo `video` modifiquen los archivos referentes al backlight)
+```
+ACTION=="add", SUBSYSTEM=="backlight", RUN+="/bin/chgrp video $sys$devpath/brightness", RUN+="/bin/chmod g+w $sys$devpath/brightness"
+```
+agregar usuario al grupo `video`
+```
+sudo usermod -aG video USER
+```
+para cambiar el brillo mirar los archivos en
+```
+/sys/class/backligh/CARPETA_CONTROLADOR/
+```
+YA HICE UN SCRIPT QUE CONTROLA TODO Y MUESTRA NOTIFICACIONES (ctrl-brightness)
